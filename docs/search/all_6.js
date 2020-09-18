@@ -2,7 +2,6 @@ var searchData=
 [
   ['getcloud',['GetCloud',['../structSeeCloudSubscriber.html#a77415133e8f45cdceb3b4158de4ce0a1',1,'SeeCloudSubscriber']]],
   ['getcurrentview',['GetCurrentView',['../classAbstractCore.html#afcd277cf8a0695bb11132723ff3f97bc',1,'AbstractCore::GetCurrentView()'],['../classori_1_1see_1_1core_1_1SeeCore.html#ae3cc8693c9fb24ab6d292776eb7e17a6',1,'ori::see::core::SeeCore::GetCurrentView()']]],
-  ['getfrontier',['GetFrontier',['../classAbstractCore.html#a0a44014b49926edf923f197f7509bb82',1,'AbstractCore::GetFrontier()'],['../classori_1_1see_1_1core_1_1SeeCore.html#a02710c2eb6d9423c223dcca5363f8c1d',1,'ori::see::core::SeeCore::GetFrontier()']]],
   ['getfrontierindex',['GetFrontierIndex',['../classAbstractCore.html#a15eb8fac2b36c2f591b3bd514794fafb',1,'AbstractCore::GetFrontierIndex()'],['../classori_1_1see_1_1core_1_1SeeCore.html#a1482f4d30cecc145e0a8e879735bf0d8',1,'ori::see::core::SeeCore::GetFrontierIndex()']]],
   ['getnbv',['GetNBV',['../classAbstractCore.html#a5c0ff965bc18bbe119cb2c7bdb33d95f',1,'AbstractCore::GetNBV()'],['../classori_1_1see_1_1core_1_1SeeCore.html#a829bd3da37fa1dcfd21a4f03416b8d04',1,'ori::see::core::SeeCore::GetNBV()']]],
   ['getobservedfrontiercount',['GetObservedFrontierCount',['../classAbstractCore.html#af26d0e393c03440b7ff2dfc6bd1ecbe7',1,'AbstractCore::GetObservedFrontierCount()'],['../classori_1_1see_1_1core_1_1SeeCore.html#a0529c3cb2ef2be97ce9612a27b6ca84f',1,'ori::see::core::SeeCore::GetObservedFrontierCount()']]],
