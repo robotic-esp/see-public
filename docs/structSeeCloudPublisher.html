@@ -78,21 +78,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae929c08f06c2b68ce44b5773a1fd74ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeCloudPublisher.html#ae929c08f06c2b68ce44b5773a1fd74ef">SeeCloudPublisher</a> (ros::NodeHandle &amp;n, std::string topic)</td></tr>
 <tr class="memdesc:ae929c08f06c2b68ce44b5773a1fd74ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise ROS publisher for SEE pointclouds.  <a href="#ae929c08f06c2b68ce44b5773a1fd74ef">More...</a><br /></td></tr>
 <tr class="separator:ae929c08f06c2b68ce44b5773a1fd74ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4530add17b964d7632e6b0af62071d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeCloudPublisher.html#a7f4530add17b964d7632e6b0af62071d">SendMessage</a> (const SeePointCloudConstPtr &amp;cloud)</td></tr>
-<tr class="memdesc:a7f4530add17b964d7632e6b0af62071d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishing function.  <a href="#a7f4530add17b964d7632e6b0af62071d">More...</a><br /></td></tr>
-<tr class="separator:a7f4530add17b964d7632e6b0af62071d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac1dae2adaab99ec600912e33842110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeCloudPublisher.html#a3ac1dae2adaab99ec600912e33842110">SendMessage</a> (SeePointCloudConstPtr cloud)</td></tr>
+<tr class="memdesc:a3ac1dae2adaab99ec600912e33842110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishing function.  <a href="#a3ac1dae2adaab99ec600912e33842110">More...</a><br /></td></tr>
+<tr class="separator:a3ac1dae2adaab99ec600912e33842110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae535f6e548f402fdaf37edf58025e936"><td class="memItemLeft" align="right" valign="top"><a id="ae535f6e548f402fdaf37edf58025e936"></a>
-ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td></tr>
-<tr class="separator:ae535f6e548f402fdaf37edf58025e936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2df75a1d193e79e04691d418c3f2c1d"><td class="memItemLeft" align="right" valign="top"><a id="af2df75a1d193e79e04691d418c3f2c1d"></a>
+ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>pub</b></td></tr>
+<tr class="separator:af2df75a1d193e79e04691d418c3f2c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac322febacb788e430f1a7cb1859917a3"><td class="memItemLeft" align="right" valign="top"><a id="ac322febacb788e430f1a7cb1859917a3"></a>
+ros::AdvertiseOptions&#160;</td><td class="memItemRight" valign="bottom"><b>a_o</b></td></tr>
+<tr class="separator:ac322febacb788e430f1a7cb1859917a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SEE Pointcloud Publisher. </p>
 <p>ROS publisher for sending SEE pointcloud messages </p>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00266">266</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00300">300</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae929c08f06c2b68ce44b5773a1fd74ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae929c08f06c2b68ce44b5773a1fd74ef">&#9670;&nbsp;</a></span>SeeCloudPublisher()</h2>
@@ -129,13 +132,13 @@ ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td><
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00274">274</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00309">309</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7f4530add17b964d7632e6b0af62071d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f4530add17b964d7632e6b0af62071d">&#9670;&nbsp;</a></span>SendMessage()</h2>
+<a id="a3ac1dae2adaab99ec600912e33842110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac1dae2adaab99ec600912e33842110">&#9670;&nbsp;</a></span>SendMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +146,7 @@ ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td><
         <tr>
           <td class="memname">void SeeCloudPublisher::SendMessage </td>
           <td>(</td>
-          <td class="paramtype">const SeePointCloudConstPtr &amp;&#160;</td>
+          <td class="paramtype">SeePointCloudConstPtr&#160;</td>
           <td class="paramname"><em>cloud</em></td><td>)</td>
           <td></td>
         </tr>
@@ -154,11 +157,12 @@ ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td><
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cloud</td><td>Pointer to SEE pointcloud being published </td></tr>
+    <tr><td class="paramname">view_num</td><td>The view number associated with the pointcloud </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00282">282</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00322">322</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>

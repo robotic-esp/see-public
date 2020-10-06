@@ -81,12 +81,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06fad9d4b1610686734067c42b3ba64a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeViewSubscriber.html#a06fad9d4b1610686734067c42b3ba64a">GetView</a> (SeeView &amp;view_out)</td></tr>
 <tr class="memdesc:a06fad9d4b1610686734067c42b3ba64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest view.  <a href="#a06fad9d4b1610686734067c42b3ba64a">More...</a><br /></td></tr>
 <tr class="separator:a06fad9d4b1610686734067c42b3ba64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089310989545aa2095552fd541cda5d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeViewSubscriber.html#a089310989545aa2095552fd541cda5d5">OnMessage</a> (const SeeViewCloudConstPtr &amp;cloud)</td></tr>
-<tr class="memdesc:a089310989545aa2095552fd541cda5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for processing SEE view messages.  <a href="#a089310989545aa2095552fd541cda5d5">More...</a><br /></td></tr>
-<tr class="separator:a089310989545aa2095552fd541cda5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97004ebb5b05e2920d899e7839fd7cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeViewSubscriber.html#af97004ebb5b05e2920d899e7839fd7cb">GetViewandNum</a> (SeeView &amp;view_out, int &amp;view_num_out)</td></tr>
+<tr class="memdesc:af97004ebb5b05e2920d899e7839fd7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest view and its number.  <a href="#af97004ebb5b05e2920d899e7839fd7cb">More...</a><br /></td></tr>
+<tr class="separator:af97004ebb5b05e2920d899e7839fd7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17720bf9fae9dfd44d50e9b7709fa59a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeViewSubscriber.html#a17720bf9fae9dfd44d50e9b7709fa59a">OnMessage</a> (const SeeViewCloudConstPtr &amp;cloud_in)</td></tr>
+<tr class="memdesc:a17720bf9fae9dfd44d50e9b7709fa59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for processing SEE view messages.  <a href="#a17720bf9fae9dfd44d50e9b7709fa59a">More...</a><br /></td></tr>
+<tr class="separator:a17720bf9fae9dfd44d50e9b7709fa59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a8fa7a28239ffab40f36d2900c6a18f68"><td class="memItemLeft" align="right" valign="top"><a id="a8fa7a28239ffab40f36d2900c6a18f68"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>view_num</b></td></tr>
+<tr class="separator:a8fa7a28239ffab40f36d2900c6a18f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a396d32d4109cd995f844b8c60906fcd8"><td class="memItemLeft" align="right" valign="top"><a id="a396d32d4109cd995f844b8c60906fcd8"></a>
 SeeView&#160;</td><td class="memItemRight" valign="bottom"><b>view</b></td></tr>
 <tr class="separator:a396d32d4109cd995f844b8c60906fcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,7 +107,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_view</b> = false<
 <div class="textblock"><p>SEE View Subscriber. </p>
 <p>ROS subscriber for SEE view messages </p>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00225">225</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00241">241</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aabebcfd42bc4ecba0b7dd2e67e807b89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabebcfd42bc4ecba0b7dd2e67e807b89">&#9670;&nbsp;</a></span>SeeViewSubscriber()</h2>
@@ -138,7 +144,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_view</b> = false<
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00235">235</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00252">252</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>
@@ -168,12 +174,52 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_view</b> = false<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Does the view exist </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00245">245</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00262">262</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>
-<a id="a089310989545aa2095552fd541cda5d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089310989545aa2095552fd541cda5d5">&#9670;&nbsp;</a></span>OnMessage()</h2>
+<a id="af97004ebb5b05e2920d899e7839fd7cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97004ebb5b05e2920d899e7839fd7cb">&#9670;&nbsp;</a></span>GetViewandNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SeeViewSubscriber::GetViewandNum </td>
+          <td>(</td>
+          <td class="paramtype">SeeView &amp;&#160;</td>
+          <td class="paramname"><em>view_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>view_num_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the latest view and its number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view_out</td><td>View </td></tr>
+    <tr><td class="paramname">view_num_out</td><td>View number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Does the view exist </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00277">277</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+
+</div>
+</div>
+<a id="a17720bf9fae9dfd44d50e9b7709fa59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17720bf9fae9dfd44d50e9b7709fa59a">&#9670;&nbsp;</a></span>OnMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +228,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_view</b> = false<
           <td class="memname">void SeeViewSubscriber::OnMessage </td>
           <td>(</td>
           <td class="paramtype">const SeeViewCloudConstPtr &amp;&#160;</td>
-          <td class="paramname"><em>cloud</em></td><td>)</td>
+          <td class="paramname"><em>cloud_in</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -196,7 +242,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_view</b> = false<
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00258">258</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00291">291</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>

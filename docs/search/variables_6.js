@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noise',['noise',['../structSensorParams.html#ad91db41fe80960200b837790887d23fe',1,'SensorParams']]]
+  ['ort_5fthres',['ort_thres',['../structNBVParams.html#a0ae5a4deb1431577f44460e38b4234e7',1,'NBVParams']]]
 ];

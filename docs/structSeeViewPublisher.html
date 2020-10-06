@@ -78,21 +78,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc9f4a639a7f4897f4ce0e0be76db5b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeViewPublisher.html#abc9f4a639a7f4897f4ce0e0be76db5b4">SeeViewPublisher</a> (ros::NodeHandle &amp;n, std::string topic)</td></tr>
 <tr class="memdesc:abc9f4a639a7f4897f4ce0e0be76db5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise ROS publisher for SEE view clouds.  <a href="#abc9f4a639a7f4897f4ce0e0be76db5b4">More...</a><br /></td></tr>
 <tr class="separator:abc9f4a639a7f4897f4ce0e0be76db5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f0155a8126ba81539b3b3f0d4adacf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeViewPublisher.html#a8f0155a8126ba81539b3b3f0d4adacf2">SendMessage</a> (const SeeViewCloudConstPtr &amp;view)</td></tr>
-<tr class="memdesc:a8f0155a8126ba81539b3b3f0d4adacf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishing function.  <a href="#a8f0155a8126ba81539b3b3f0d4adacf2">More...</a><br /></td></tr>
-<tr class="separator:a8f0155a8126ba81539b3b3f0d4adacf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a187e2c743818db3e2ab941dabb56cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSeeViewPublisher.html#a8a187e2c743818db3e2ab941dabb56cb">SendMessage</a> (SeeView view, int view_num)</td></tr>
+<tr class="memdesc:a8a187e2c743818db3e2ab941dabb56cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishing function.  <a href="#a8a187e2c743818db3e2ab941dabb56cb">More...</a><br /></td></tr>
+<tr class="separator:a8a187e2c743818db3e2ab941dabb56cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8827049e91ecaa2d95d7747e75075614"><td class="memItemLeft" align="right" valign="top"><a id="a8827049e91ecaa2d95d7747e75075614"></a>
-ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td></tr>
-<tr class="separator:a8827049e91ecaa2d95d7747e75075614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863db0ab517e461c0e8332a892e0b07d"><td class="memItemLeft" align="right" valign="top"><a id="a863db0ab517e461c0e8332a892e0b07d"></a>
+ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>pub</b></td></tr>
+<tr class="separator:a863db0ab517e461c0e8332a892e0b07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe62a8bcb482d03e54cf2b802c0347f"><td class="memItemLeft" align="right" valign="top"><a id="a9fe62a8bcb482d03e54cf2b802c0347f"></a>
+ros::AdvertiseOptions&#160;</td><td class="memItemRight" valign="bottom"><b>a_o</b></td></tr>
+<tr class="separator:a9fe62a8bcb482d03e54cf2b802c0347f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SEE View Publisher. </p>
 <p>ROS publisher for sending SEE view cloud messages </p>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00287">287</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00327">327</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc9f4a639a7f4897f4ce0e0be76db5b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc9f4a639a7f4897f4ce0e0be76db5b4">&#9670;&nbsp;</a></span>SeeViewPublisher()</h2>
@@ -129,13 +132,13 @@ ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td><
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00295">295</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00336">336</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8f0155a8126ba81539b3b3f0d4adacf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f0155a8126ba81539b3b3f0d4adacf2">&#9670;&nbsp;</a></span>SendMessage()</h2>
+<a id="a8a187e2c743818db3e2ab941dabb56cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a187e2c743818db3e2ab941dabb56cb">&#9670;&nbsp;</a></span>SendMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,9 +146,19 @@ ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td><
         <tr>
           <td class="memname">void SeeViewPublisher::SendMessage </td>
           <td>(</td>
-          <td class="paramtype">const SeeViewCloudConstPtr &amp;&#160;</td>
-          <td class="paramname"><em>view</em></td><td>)</td>
+          <td class="paramtype">SeeView&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>view_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -153,12 +166,13 @@ ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td><
 <p>Publishing function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">view</td><td>Pointer to SEE view cloud being published </td></tr>
+    <tr><td class="paramname">view</td><td>SEE view being published </td></tr>
+    <tr><td class="paramname">view_num</td><td>The view number </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00303">303</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00349">349</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>

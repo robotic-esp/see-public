@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['k',['k',['../structAlgParams.html#aa4738b173d7b474feea182fc9f1d6707',1,'AlgParams']]]
+  ['noise',['noise',['../structSensorParams.html#ad91db41fe80960200b837790887d23fe',1,'SensorParams']]]
 ];

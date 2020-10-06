@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['pix_5fx',['pix_x',['../structSensorParams.html#a315cd85c9eff8c35875a6f4e26d63a70',1,'SensorParams']]],
-  ['pix_5fy',['pix_y',['../structSensorParams.html#ad130a3c1a1767963be27a8d18ad5c3bf',1,'SensorParams']]],
-  ['psi',['psi',['../structSeeParams.html#a535ac30e9d36f2c910ce2961c575ec69',1,'SeeParams']]]
+  ['r',['r',['../structAlgParams.html#aa09f082963f9b08081097156b8294ff6',1,'AlgParams']]],
+  ['rho',['rho',['../structAlgParams.html#a7bf86d664d2ddef2a6ab0fc2eaea21d0',1,'AlgParams']]]
 ];

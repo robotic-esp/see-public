@@ -78,18 +78,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab28accbbcdf847ee6568328aca202d3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSenCloudPublisher.html#ab28accbbcdf847ee6568328aca202d3d">SenCloudPublisher</a> (ros::NodeHandle &amp;n, std::string topic, <a class="el" href="structSensorParams.html">SensorParams</a> sensor_params)</td></tr>
 <tr class="memdesc:ab28accbbcdf847ee6568328aca202d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise ROS publisher for sensor pointclouds.  <a href="#ab28accbbcdf847ee6568328aca202d3d">More...</a><br /></td></tr>
 <tr class="separator:ab28accbbcdf847ee6568328aca202d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2120ff066978152b04e3db9f34900e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSenCloudPublisher.html#ad2120ff066978152b04e3db9f34900e4">SendMessage</a> (const SeePointCloudConstPtr &amp;cloud_in)</td></tr>
-<tr class="memdesc:ad2120ff066978152b04e3db9f34900e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishing function.  <a href="#ad2120ff066978152b04e3db9f34900e4">More...</a><br /></td></tr>
-<tr class="separator:ad2120ff066978152b04e3db9f34900e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb95da23bca0b431630c635e95ad12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSenCloudPublisher.html#a1cb95da23bca0b431630c635e95ad12f">SendMessage</a> (SeePointCloudConstPtr cloud_in, int cloud_num)</td></tr>
+<tr class="memdesc:a1cb95da23bca0b431630c635e95ad12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishing function.  <a href="#a1cb95da23bca0b431630c635e95ad12f">More...</a><br /></td></tr>
+<tr class="separator:a1cb95da23bca0b431630c635e95ad12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab2f6af323f80c1ebf4e7abcd25d7b827"><td class="memItemLeft" align="right" valign="top"><a id="ab2f6af323f80c1ebf4e7abcd25d7b827"></a>
-ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>p</b></td></tr>
-<tr class="separator:ab2f6af323f80c1ebf4e7abcd25d7b827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a931d609879feb5e213dd5310f8c0cb7c"><td class="memItemLeft" align="right" valign="top"><a id="a931d609879feb5e213dd5310f8c0cb7c"></a>
 <a class="el" href="structSensorParams.html">SensorParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_p</b></td></tr>
 <tr class="separator:a931d609879feb5e213dd5310f8c0cb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455b92edd9133b8bc3f7ee46229d6fd9"><td class="memItemLeft" align="right" valign="top"><a id="a455b92edd9133b8bc3f7ee46229d6fd9"></a>
+ros::Publisher&#160;</td><td class="memItemRight" valign="bottom"><b>pub</b></td></tr>
+<tr class="separator:a455b92edd9133b8bc3f7ee46229d6fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d1d0ff56072074a2097f26b40481d8"><td class="memItemLeft" align="right" valign="top"><a id="aa5d1d0ff56072074a2097f26b40481d8"></a>
+ros::AdvertiseOptions&#160;</td><td class="memItemRight" valign="bottom"><b>a_o</b></td></tr>
+<tr class="separator:aa5d1d0ff56072074a2097f26b40481d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c44ae11a985ef8deb86f06397336d76"><td class="memItemLeft" align="right" valign="top"><a id="a5c44ae11a985ef8deb86f06397336d76"></a>
 tf::TransformListener&#160;</td><td class="memItemRight" valign="bottom"><b>tf_tl</b></td></tr>
 <tr class="separator:a5c44ae11a985ef8deb86f06397336d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,7 +104,7 @@ sensor_msgs::PointCloud2&#160;</td><td class="memItemRight" valign="bottom"><b>c
 <div class="textblock"><p>Sensor Pointcloud Publisher. </p>
 <p>ROS publisher for sending sensor pointcloud messages </p>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00082">82</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00086">86</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab28accbbcdf847ee6568328aca202d3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab28accbbcdf847ee6568328aca202d3d">&#9670;&nbsp;</a></span>SenCloudPublisher()</h2>
@@ -145,23 +148,33 @@ sensor_msgs::PointCloud2&#160;</td><td class="memItemRight" valign="bottom"><b>c
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00094">94</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00099">99</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad2120ff066978152b04e3db9f34900e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2120ff066978152b04e3db9f34900e4">&#9670;&nbsp;</a></span>SendMessage()</h2>
+<a id="a1cb95da23bca0b431630c635e95ad12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb95da23bca0b431630c635e95ad12f">&#9670;&nbsp;</a></span>SendMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool SenCloudPublisher::SendMessage </td>
+          <td class="memname">void SenCloudPublisher::SendMessage </td>
           <td>(</td>
-          <td class="paramtype">const SeePointCloudConstPtr &amp;&#160;</td>
-          <td class="paramname"><em>cloud_in</em></td><td>)</td>
+          <td class="paramtype">SeePointCloudConstPtr&#160;</td>
+          <td class="paramname"><em>cloud_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cloud_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -173,9 +186,8 @@ sensor_msgs::PointCloud2&#160;</td><td class="memItemRight" valign="bottom"><b>c
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Was the pointcloud published successfully </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00105">105</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ros__common_8h_source.html#l00113">113</a> of file <a class="el" href="ros__common_8h_source.html">ros_common.h</a>.</p>
 
 </div>
 </div>
