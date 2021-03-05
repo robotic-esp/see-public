@@ -1,0 +1,28 @@
+<launch>
+
+  <arg name="d" default="0"/>
+  <arg name="r" default="0.017"/>
+  <arg name="rho" default="146000"/>
+
+  <arg name="tau" default="100"/>
+  <arg name="psi" default="1.0"/>
+  <arg name="ups" default="0.01"/>
+
+  <arg name="dst_thres" default="0.01"/>
+  <arg name="ort_thres" default="10.0"/>
+
+  <node pkg="see_core" type="see_main" name="see" output="screen"> 
+
+    <param name="d" value="$(arg d)"/>
+    <param name="r" value="$(arg r)"/>
+    <param name="rho" value="$(arg rho)"/>
+
+    <param name="tau" value="$(arg tau)"/>
+    <param name="psi" value="$(arg psi)"/>
+    <param name="ups" value="$(arg ups)"/>
+
+    <param name="nbv/dst_thres" value="$(arg dst_thres)"/>
+    <param name="nbv/ort_thres" value="$(arg ort_thres)"/>
+
+  </node>
+</launch>
