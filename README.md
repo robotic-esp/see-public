@@ -24,15 +24,9 @@ scene observations.
   density (rho), frontier update limit (tau), occlusion search distance
   (psi) and visibility search distance (ups)), the sensor parameters
   (e.g., field-of-view, resolution and fps) and the ROS topic for sensor
-<<<<<<< HEAD
-  pointclouds (sen_pts_topic) in the launch file see-core/launch/run_see.launch
-- Run the launch file
-    - roslaunch see-core run_see.launch
-=======
   pointclouds (sen_pts_topic) in the launch file see_core/launch/run_see.launch
 - Run the launch file
     - roslaunch see_core run_see.launch
->>>>>>> 5ad336c8cca4c8421cf0a02599c912ac8b9657ea
 - More information can be found on the doxygen webpage
   - https://robotic-esp.github.io/see-public/
 
