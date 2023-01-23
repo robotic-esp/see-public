@@ -1,0 +1,28 @@
+<launch>
+
+  <include file="$(find see_common)/launch/see_common.launch">
+    <arg name="fps" value="30"/>
+    <arg name="f_axis" value="0"/>
+    <arg name="pix_x" value="848"/>
+    <arg name="pix_y" value="480"/>
+    <arg name="fov_x" value="69.4"/>
+    <arg name="fov_y" value="42.5"/>
+    <arg name="world_frame" value="world"/>
+    <arg name="sensor_frame" value="sensor"/>
+    <arg name="sen_pts_topic" value="sen_pts"/>
+  </include>
+
+  <include file="$(find see_core)/launch/see_main.launch">
+    <arg name="d" value="0"/>
+    <arg name="r" value="0.017"/>
+    <arg name="rho" value="146000"/>
+
+    <arg name="tau" value="100"/>
+    <arg name="psi" value="1.0"/>
+    <arg name="ups" value="0.01"/>
+
+    <arg name="dst_thres" value="0.01"/>
+    <arg name="ort_thres" value="10.0"/>
+  </include>
+
+</launch>

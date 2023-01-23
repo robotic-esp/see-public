@@ -1,0 +1,53 @@
+<launch>
+
+  <arg name="done" default="false"/>
+  <arg name="ready" default="true"/>
+  <arg name="sim_ready" default="false"/>
+  <arg name="use_rviz" default="false"/>
+  <arg name="use_moveit" default="false"/>
+  <arg name="use_receipts" default="false"/>
+  <arg name="use_constraints" default="false"/>
+
+  <arg name="sen_pts_topic" default="sen_pts"/>
+
+  <arg name="fps" default="30"/>
+  <arg name="f_axis" default="0"/>
+  <arg name="pix_x" default="848"/>
+  <arg name="pix_y" default="480"/>
+  <arg name="fov_x" default="69.4"/>
+  <arg name="fov_y" default="42.5"/>
+  <arg name="noise" default="0.01"/>
+  <arg name="world_frame" default="world"/>
+  <arg name="sensor_frame" default="sensor"/>
+  <arg name="bounds" default="[-0.45,-0.45,0.01,0.45,0.45,0.65]"/>
+
+  <param name="/see/view_num" value="0"/>
+  <param name="/see/percent" value="0"/>
+  <param name="/see/distance" value="0"/>
+  <param name="/see/time" value="0"/>
+  <param name="/see/captured_view" value="false"/>
+  <param name="/see/finished_observation" value="false"/>
+  <param name="/see/sen_cloud_num" value="0"/>
+  <param name="/see/see_cloud_num" value="0"/>
+  <param name="/see/done" value="$(arg done)"/>
+  <param name="/see/ready" value="$(arg ready)"/>
+  <param name="/see/sim_ready" value="$(arg sim_ready)"/>
+  <param name="/see/use_rviz" value="$(arg use_rviz)"/>
+  <param name="/see/use_moveit" value="$(arg use_moveit)"/>
+  <param name="/see/use_receipts" value="$(arg use_receipts)"/>
+  <param name="/see/use_constraints" value="$(arg use_constraints)"/>
+
+  <param name="/see/topics/sen_pts" value="$(arg sen_pts_topic)"/>
+
+  <param name="/see/sensor/fps" value="$(arg fps)"/>
+  <param name="/see/sensor/f_axis" value="$(arg f_axis)"/>
+  <param name="/see/sensor/pix_x" value="$(arg pix_x)"/>
+  <param name="/see/sensor/pix_y" value="$(arg pix_y)"/>
+  <param name="/see/sensor/fov_x" value="$(arg fov_x)"/>
+  <param name="/see/sensor/fov_y" value="$(arg fov_y)"/>
+  <param name="/see/sensor/noise" value="$(arg noise)"/>
+  <param name="/see/sensor/world_frame" value="$(arg world_frame)"/>
+  <param name="/see/sensor/sensor_frame" value="$(arg sensor_frame)"/>
+  <rosparam param="/see/sensor/bounds" subst_value="True">$(arg bounds)</rosparam>
+
+</launch>
