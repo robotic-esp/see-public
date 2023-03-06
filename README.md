@@ -10,8 +10,8 @@ scene observations.
 
 - Install Dependencies
   - sudo apt install libnlopt-dev liblemon-dev
-- Install ROS (includes PCL)
-  - http://wiki.ros.org/melodic/Installation/Ubuntu (use full desktop install)
+- Install ROS Noetic (includes PCL)
+  - http://wiki.ros.org/noetic/Installation/Ubuntu (use full desktop install)
 - Clone SEE into your catkin workspace
   - cd ~/catkin_ws/src && git clone https://github.com/robotic-esp/see-public
 - Build SEE with catkin
